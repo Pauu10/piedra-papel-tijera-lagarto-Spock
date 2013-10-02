@@ -35,4 +35,14 @@ public class PartidaTests {
      assertEquals("Papel envuelva papel",
      		Resultado.EMPATA, jugadorUno.jugarCon(jugadorDos));
       }
+   
+   @Test
+   public void quePiedraAplasteTijera(){
+
+	  Mano jugadorUno = new Mano(Forma.TIJERA);
+	  Mano jugadorDos = new Mano(Forma.PIEDRA);
+	  
+	  assertEquals("Piedra aplaste tijera",
+			  Resultado.PIERDE, jugadorUno.jugarCon(jugadorDos));
+   }
          }
