@@ -12,15 +12,11 @@ public class Mano {
 			                                 {Resultado.PIERDE, Resultado.GANA, Resultado.EMPATA, Resultado.PIERDE, Resultado.GANA},
 			                                 {Resultado.EMPATA, Resultado.EMPATA, Resultado.GANA, Resultado.PIERDE, Resultado.GANA}};
 
-	
 	public Mano(final Forma forma) {
-		this.forma = forma.getValor();
+	  this.forma = forma.getValor();
 	}
 
 	public Resultado jugarCon(final Mano otra) {
-		
 		return opciones[this.forma][otra.forma];
-		
-	}
-
-}
+		}
+           }

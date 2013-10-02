@@ -13,8 +13,7 @@ public class PartidaTests {
 
 		assertEquals("Spock vaporiza piedra",
 				Resultado.GANA, jugadorUno.jugarCon(jugadorDos));
-
-	}
+      	}
 	
 
    @Test
@@ -25,8 +24,7 @@ public class PartidaTests {
 	  
 	   assertEquals("Lagarto come papel",
 			 Resultado.PIERDE, jugadorUno.jugarCon(jugadorDos));
-	   
-   }
+	     }
 	
    @Test 
    public void quePapelEnvuelvaPapel(){
@@ -36,6 +34,5 @@ public class PartidaTests {
    
      assertEquals("Papel envuelva papel",
      		Resultado.EMPATA, jugadorUno.jugarCon(jugadorDos));
-   }
-  
-   }
+      }
+         }
