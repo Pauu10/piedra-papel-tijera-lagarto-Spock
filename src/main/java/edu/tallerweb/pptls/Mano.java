@@ -6,11 +6,16 @@ package edu.tallerweb.pptls;
 public class Mano {
    private final Integer forma;
    private final Resultado [][] opciones = {
-		                                     {Resultado.EMPATA, Resultado.PIERDE, Resultado.PIERDE, Resultado.GANA, Resultado.GANA},
-			                                 {Resultado.GANA, Resultado.EMPATA, Resultado.PIERDE, Resultado.PIERDE, Resultado.GANA},
-			                                 {Resultado.GANA, Resultado.GANA, Resultado.EMPATA, Resultado.PIERDE, Resultado.PIERDE},
-			                                 {Resultado.PIERDE, Resultado.GANA, Resultado.GANA, Resultado.EMPATA, Resultado.PIERDE},
-			                                 {Resultado.PIERDE, Resultado.PIERDE, Resultado.GANA, Resultado.GANA, Resultado.EMPATA}};
+		                                     {Resultado.EMPATA, Resultado.PIERDE, Resultado.PIERDE, 
+		                                      Resultado.GANA, Resultado.GANA},
+			                                 {Resultado.GANA, Resultado.EMPATA, Resultado.PIERDE, 
+		                                      Resultado.PIERDE, Resultado.GANA},
+			                                 {Resultado.GANA, Resultado.GANA, Resultado.EMPATA, 
+		                                      Resultado.PIERDE, Resultado.PIERDE},
+			                                 {Resultado.PIERDE, Resultado.GANA, Resultado.GANA,
+		                                      Resultado.EMPATA, Resultado.PIERDE},
+			                                 {Resultado.PIERDE, Resultado.PIERDE, Resultado.GANA, 
+		                                      Resultado.GANA, Resultado.EMPATA}};
 
 	public Mano(final Forma forma) {
 	  this.forma = forma.getValor();
