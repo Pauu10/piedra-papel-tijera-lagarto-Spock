@@ -15,5 +15,27 @@ public class PartidaTests {
 				Resultado.GANA, jugadorUno.jugarCon(jugadorDos));
 
 	}
+	
 
-}
+   @Test
+   public void queLagartoComePapel(){
+	   
+	   Mano jugadorUno = new Mano(Forma.PAPEL);
+	   Mano jugadorDos = new Mano(Forma.LAGARTO);
+	  
+	   assertEquals("Lagarto come papel",
+			 Resultado.PIERDE, jugadorUno.jugarCon(jugadorDos));
+	   
+   }
+	
+   @Test 
+   public void quePapelEnvuelvaPapel(){
+
+     Mano jugadorUno = new Mano(Forma.PAPEL);
+     Mano jugadorDos = new Mano(Forma.PAPEL);
+   
+     assertEquals("Papel envuelva papel",
+     		Resultado.EMPATA, jugadorUno.jugarCon(jugadorDos));
+   }
+  
+   }
