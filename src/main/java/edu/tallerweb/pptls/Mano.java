@@ -4,9 +4,9 @@ package edu.tallerweb.pptls;
  * Representa una de las Manos involucradas en el juego
  */
 public class Mano {
-     
-	private final Integer forma;
-	private final Resultado [][] opciones= {{Resultado.EMPATA, Resultado.PIERDE, Resultado.PIERDE, Resultado.GANA, Resultado.GANA},
+   private final Integer forma;
+   private final Resultado [][] opciones = {
+		                                     {Resultado.EMPATA, Resultado.PIERDE, Resultado.PIERDE, Resultado.GANA, Resultado.GANA},
 			                                 {Resultado.GANA, Resultado.EMPATA, Resultado.PIERDE, Resultado.PIERDE, Resultado.GANA},
 			                                 {Resultado.GANA, Resultado.GANA, Resultado.EMPATA, Resultado.PIERDE, Resultado.PIERDE},
 			                                 {Resultado.PIERDE, Resultado.GANA, Resultado.GANA, Resultado.EMPATA, Resultado.PIERDE},
